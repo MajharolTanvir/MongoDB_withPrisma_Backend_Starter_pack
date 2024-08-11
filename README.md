@@ -39,14 +39,14 @@ npx prisma init
 
 ```bash
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 ```
 
 - Create a .env file in the project root directory and set the DATABASE_URL environment variable. Replace the placeholders with your database connection details:
 ```bash
-DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE?schema=SCHEMA"
+DATABASE_URL="mongodb+srv://test:test@cluster0.ns1yp.mongodb.net/myFirstDatabase"
 ```
 
 5. Creating the database schema
